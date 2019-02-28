@@ -1,0 +1,54 @@
+.icon-link {
+    height: 20px;
+    width: 20px;
+}
+
+#avatar {
+    height: 250px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#links {
+    height: 250px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-image {
+    height: 80px;
+}
+
+#sh-logo {
+    border-radius: 6px;
+}
+
+#landing-arrow-cont {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#landing-arrow {
+    opacity: 0;
+    transition: opacity .35s ease;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+    #bio-info {
+        flex-direction: column !important;
+    }
+
+    #links {
+        align-items: center !important;
+        height: auto !important;
+    }
+
+    #bio-roles, #bio-blurb {
+        text-align: center;
+    }
+}
